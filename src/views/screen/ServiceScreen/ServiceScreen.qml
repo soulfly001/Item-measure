@@ -19,7 +19,7 @@ Item {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: colorHelper.darkPasteBlue
+        color: "transparent"
        /* RadialGradient {
            anchors.fill: parent
            gradient: Gradient {

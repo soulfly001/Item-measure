@@ -37,7 +37,8 @@ ApplicationWindow
 
     MediaScreen.MediaOutputPane{
         id: mainMediaPanel
-        visible: false
+        visible: true
+        z:10
         anchors{
             top: parent.top
             left: parent.left

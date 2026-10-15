@@ -20,7 +20,7 @@ Item {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: "#F4DCD6" //pastel orange
+        color: "transparent" //pastel orange
         //RadialGradient {
           //  anchors.fill: parent
           //  gradient: Gradient {

@@ -23,10 +23,20 @@ Item {
     state: "small"
     width: parent.width
     height: parent.height
-
-    onMediaSourceChanged: {
+       /* 新增部分   */
+    Component.onCompleted:{
+            mediaUrl = "file:///D:/OpenCV_test/bb.jpg"; // 填入你的图片路径（带 file:/// 也可以，C++会处理）
+            mediaSource = "image"; // 设置为图片模式
+            play(); // 强制调用加载
     }
-
+    onMediaSourceChanged: {
+        play();
+    }
+    onMediaUrlChanged: {
+        if (mediaUrl !== "") {
+            play(); // 当路径改变时，调用 play
+         }
+    }
     function getCurrentVideoOutput(){
         return mediaSource
     }
