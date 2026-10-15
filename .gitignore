@@ -1,0 +1,9 @@
+build/
+cmake-build-debug/
+cmake-build-release/
+.idea/
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
